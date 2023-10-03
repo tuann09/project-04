@@ -7,7 +7,12 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
+    background: #fffaf5;
 }
+:root {
+    --primary-color: #ff5b2e;
+}
+/*----------Conmmon----------*/
 h1,
 h2,
 h3,
@@ -15,4 +20,235 @@ h4,
 h5,
 h6 {
     font-family: "Sora", sans-serif;
+}
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.btn__icon {
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.btn-primary {
+    color: #fff;
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.btn:hover {
+    opacity: 0.7;
+}
+/*--------------Header-------------*/
+.header-top {
+    background: #fffaf5;
+    padding: 26px 0 10px;
+    position: sticky;
+    top: -16px;
+}
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar__list {
+    display: flex;
+}
+.navbar__item {
+}
+.navbar__link {
+    padding: 8px 18px;
+    color: #5e6085;
+
+    font-size: 1.4rem;
+
+    font-weight: 500;
+    line-height: 100%;
+    transition: 0.2s;
+}
+.navbar__link:hover {
+    color: #000958;
+    text-shadow: 1px 0 0 currentColor;
+}
+.signup-cta {
+    min-width: 118px;
+    height: 50px;
+    color: #000958;
+
+    font-size: 1.4rem;
+
+    font-weight: 600;
+    line-height: 100%;
+    border-radius: 25px;
+    border: 1px solid #000958;
+}
+/*--------------Hero-------------*/
+.hero {
+    padding-top: 90px;
+}
+.hero__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 121px;
+}
+.hero__media {
+    max-width: 52%;
+    display: flex;
+    position: relative;
+    padding-bottom: 94px;
+}
+.hero__img-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 388px;
+    height: 488px;
+    border-radius: 16px;
+    background: #fe997b;
+    border: 3px solid #fff;
+}
+.hero__img {
+    border-radius: inherit;
+    max-width: 100%;
+    max-height: 100%;
+}
+.hero__decor {
+    position: absolute;
+    z-index: -1;
+}
+.hero__decor-left {
+    left: -58px;
+    bottom: 10px;
+}
+.hero__decor-right {
+    top: 16px;
+    right: -40px;
+}
+.hero__img-wrap-small {
+    width: 186px;
+    height: 244px;
+    align-self: flex-end;
+    margin-left: -24px;
+    margin-bottom: -58px;
+    background: #faa7ad;
+    border: 2px solid #f7dddf;
+}
+.hero__img-small {
+    max-width: 100%;
+    max-height: 100%;
+}
+.hero__list {
+    left: 129px;
+    bottom: 0;
+    position: absolute;
+    width: 250px;
+    height: 156px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
+    padding: 18px 14px;
+}
+.hero-list-item {
+    display: flex;
+}
+.hero-list-item__thumb {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 10px;
+    background: #fec23f;
+}
+.hero-list-item__info {
+    margin-left: 10px;
+}
+.hero-list-item__title {
+    color: #181e52;
+    font-family: Sora;
+    font-size: 1.4rem;
+
+    font-weight: 600;
+    line-height: 100%;
+}
+.hero-list-item__skeleton {
+    margin-top: 6px;
+    width: 118px;
+    height: 4px;
+    border-radius: 10px;
+    opacity: 0.08;
+    background: #000958;
+}
+.hero-list-item__separate {
+    display: block;
+    margin: 20px 0;
+    width: 222px;
+    height: 2px;
+    background: #f2f2f2;
+    border-radius: 99px;
+}
+.hero-list-item:nth-of-type(2) .hero-list-item__thumb {
+    background: #c6e2fa;
+}
+.hero__heading {
+    color: #000958;
+
+    font-size: 6.6rem;
+
+    font-weight: 800;
+    line-height: 115.152%;
+}
+.hero__desc {
+    color: #656689;
+    margin-top: 24px;
+    font-size: 1.6rem;
+    width: 391px;
+    font-weight: 400;
+    line-height: 187.5%;
+}
+.hero__row {
+    display: flex;
+    align-items: center;
+    margin-top: 38px;
+}
+.hero__cta-btn {
+    height: 60px;
+    border-radius: 31px;
+    background: var(--primary-color);
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+    min-width: 189px;
+    color: #fff;
+
+    font-size: 1.6rem;
+
+    font-weight: 600;
+    line-height: 100%;
+}
+.hero__cta-link {
+    color: #000958;
+    text-align: center;
+    margin-left: 24px;
+    font-size: 1.6rem;
+
+    font-weight: 500;
+    line-height: 100%;
+    text-decoration-line: underline;
 }
